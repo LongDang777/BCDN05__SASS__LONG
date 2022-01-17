@@ -1,0 +1,19 @@
+
+//Helper
+@import "./Helper/variables.scss";
+@import "./Helper/mixin.scss";
+
+//Base
+@import "./Base/customize.scss";
+@import "./Base/reset.scss";
+
+//Component
+@import "./Components/button.scss";
+@import "./Components/background.scss";
+
+//Layouts
+@import "./Layouts/header.scss";
+@import "./Layouts/about.scss";
+@import "./Layouts/blog.scss";
+@import "./Layouts/course.scss";
+@import "./Layouts/footer.scss";

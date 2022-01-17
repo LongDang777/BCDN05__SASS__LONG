@@ -1,0 +1,43 @@
+#blog{
+    background-color: $color-violet;
+    position: relative;
+    z-index: 1;
+}
+.card{
+   border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: $ts;
+    &:hover{
+        box-shadow: 0 30px 30px -10px rgba($color: #000000, $alpha: .25);
+    }
+}
+.blog__img{
+    overflow: hidden;
+}
+.card-img-top{
+    transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
+    &:hover{
+        transform: scale3d(1.05,1.05,1.05)
+    }
+}
+.card-body{
+    padding: 30px;
+}
+.card-body h5{
+    font-size: 0.75rem;
+    font-weight: $fw-6;
+    color: $color-pink-1;
+}
+.card-body p {
+    font-size: $fs-2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+#blog .col-3{
+    padding:  0 18px 0 18px;
+}
+.blog__space{
+    height: 40px;
+    width: 100%;
+}

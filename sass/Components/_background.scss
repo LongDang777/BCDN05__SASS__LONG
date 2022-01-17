@@ -1,0 +1,54 @@
+
+.bg__img-yellow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -10;
+}
+.bg__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+    max-width: 100%;
+}
+.bg__img .bg__img-violet{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -9;
+}
+.blog__bg-img{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -8;
+}
+.blog__bg-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+    z-index: -8;
+}
+.course__bg{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -8;
+}
+.course__bg img{
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+    z-index: -8;
+}

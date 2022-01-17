@@ -1,0 +1,64 @@
+#footer{
+    width: 100%;
+    background-image: url(../../image/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-attachment: scroll;
+    color: $color-white-1;
+    padding:  149px 0 ;
+    .card-title-lg{
+        color: $color-white-1;
+    }   
+    .row{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+    .footer__content{
+        margin-top: 20px;
+    }
+    i:hover{
+        color: $color-dark-2;
+    }
+    .btnPage{
+        border: solid 1px #fff;
+        box-shadow: 0 0 0 3em #fff inset;
+        padding: 13px 80px;
+        color: $color-pink-1;
+        transition: $ts;
+        &:hover{
+            color: #fff;
+            box-shadow: #fff 0 0 1px inset;
+            background-color:$color-pink-1;
+           
+        }
+    }
+}
+#footer i, #footer a{
+    @include styleText($color-white-1,$fs-1,none,$lh-1 + 2.85)
+}
+.footer__content li{
+    margin-bottom: 5px;
+}
+.footer__line li {
+    padding-bottom:10px ;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.footer__input{
+    outline: none;
+    font-size: $fs-1 + 0.5;
+    font-weight: $fw-5;
+    padding: $pd-2 - 1  $pd-4 + 11;
+    border-radius: 50px;
+    border: solid 1px $color-pink-1;
+    color: #fff !important;
+    background-color: transparent;
+    text-align: center;
+    transition: $ts;
+    &:focus{
+        border: solid 1px #fff;
+    }
+    &::placeholder{
+        color: $color-white-1;
+    }
+}
+

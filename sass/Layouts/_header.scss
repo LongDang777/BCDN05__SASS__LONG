@@ -1,0 +1,120 @@
+.navbar,
+.navbar-brand {
+    padding: 0;
+    // background-color: transparent !important;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding-left: $pd-1;
+    padding-right: $pd-4 - 3;
+    transition: $ts;
+    &:hover::after {
+        transform: scale(1.1);
+    }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: $color-dark-1;
+    font-weight: $fw-6;
+    font-size: $fs-1;
+    position: relative;
+    transition: $ts;
+}
+// hover
+/**
+.nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    background-color: $color-pink-1;
+    height: 0.5rem;
+    width: 0.5rem;
+    left: 50%;
+    border-radius: 50%;
+    bottom: -4px;
+    pointer-events: none;
+    transform: scale(0);
+    transition: $ts;
+}
+.active .nav-link::after {
+    transform: scale(1);
+}
+.nav-item:hover {
+    .nav-link::after {
+        transform: scale(1.5);
+    }
+    .nav-link {
+        color: $color-pink-1 !important;
+    }
+}
+*/
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram,
+.fa-youtube {
+    padding: 13px 0 13px 8px;
+    font-size: $fs-1 + 0.225;
+    color: $color-dark-1;
+    transition: $ts;
+    &:hover {
+        color: $color-pink-1;
+    }
+}
+//Reponsive
+@media screen and(min-width:0) {
+    .container {
+        padding: 0 30px;
+    }
+    #header {
+        background-color: $color-white-1;
+        margin: 0;
+        padding: 0 30px;
+    }
+    .navbar {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+    }
+    .navbar-light .navbar-toggler-icon {
+        height: 48px;
+        width: 35px;
+    }
+    .navbar-toggler{
+        padding: 0 0.5em 0 0;
+    }
+    .navbar-brand img {
+        height: 48px;
+    }
+    .header__contact{
+        padding-top: 15px;
+    }
+    .header__social-icon{
+        padding-top: 10px;
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: $color-pink-1;
+    }
+}
+@media screen and(min-width:576px) {
+    .container {
+        padding: 0
+    }
+}
+@media screen and(min-width:1024px) {
+    .navbar {
+        flex-direction: row;
+        margin: auto;
+    }
+    .navbar-brand img {
+        height: 80px;
+    }
+    #header{
+        padding: 0;
+        margin: auto;
+        background-color: transparent;
+    }
+    .header__contact{
+        display: flex;
+    }
+}

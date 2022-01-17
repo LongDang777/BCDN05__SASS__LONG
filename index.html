@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapContent">
+        <header id="header" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./image/crest.png" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elements</a>
+                        </li>
+                        <div class="header__contact">
+                            <div class="header__contact-cell">
+                                <div class="header__phone">
+                                    <a class="btnPage" href="tel:(+1)555 234-8765">
+                                        <i class="fa fa-phone"></i>
+                                        &nbsp (+1) 555 234-8765
+                                    </a>
+                                </div>
+                                <div class="header__social-icon">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="row  modal-dialog-centered">
+                        <div class="col-md-6">
+                            <div class="about__title">
+                                <h5>ABOUT US</h5>
+                                <span>The language teaching experts</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./image/hero_team.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg__img">
+            <div class="bg__img-yellow">
+                <img src="./image/yellow_top_wave_01.png" alt="">
+            </div>
+            <div class="bg__img-violet">
+                <img src="./image/Violet_top_left_wave.png" alt="">
+            </div>
+        </div>
+    </div>
+    <section id="blog">
+        <div class="container">
+            <div class="row pt-4 text-center">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ITALIA</h5>
+                            <span class="card-title-lg">July Roberts</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FRENCH</h5>
+                            <span class="card-title-lg">Jon Stone</span>
+                            <p class="card-text">Nanotechnology immersion along the information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_3.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JAPANESE</h5>
+                            <span class="card-title-lg">Emma Stone</span>
+                            <p class="card-text">Bring to the table win-win survival strategies to ensure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_4.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">CHINESE</h5>
+                            <span class="card-title-lg">Mark Lee</span>
+                            <p class="card-text">Proactive domination. At the end of the day going forward.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__space"></div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_5.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RUSSIAN</h5>
+                            <span class="card-title-lg">John Doe</span>
+                            <p class="card-text">A new normal that has evolved from generation X.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_6.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SWEDEN</h5>
+                            <span class="card-title-lg">Jane Smith</span>
+                            <p class="card-text">Heading towards a streamlined cloud solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_7.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SPANISH</h5>
+                            <span class="card-title-lg">Hanna Alverez</span>
+                            <p class="card-text">Content in real-time will have multiple touchpoints.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="blog__img">
+                            <img class="card-img-top" src="./image/teacher_8.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ITALIA</h5>
+                            <span class="card-title-lg">July Roberts</span>
+                            <p class="card-text">Capitalize on low hanging fruit to identify a ballpark.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="blog__bg-img">
+            <img src="./image/Wave_White_bottom_right_shape_01.png" alt="">
+        </div>
+    </section>
+    <section id="course">
+        <div class="container">
+            <div class="row ">
+                <div class="course__left col-xl-7">
+                    <img src="./image/conatct_inner.png" alt="">
+                </div>
+                <div class="course__right col-xl-5">
+                    <form action="">
+                        <form>
+                            <legend>Find Your Course</legend>
+                            <div class="form-row">
+                                <div class="course__icon col-md-6 mb-3">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="course__icon col-md-6 mb-3">
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="text" class="form-control" placeholder="E-email">
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <div class="course__icon col">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <select class="custom-select">
+                                        <option selected>English</option>
+                                        <option>French</option>
+                                        <option>Spanish</option>
+                                        <option>Germany</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group course__icon">
+                                <i class="fa fa-comment-alt"></i>
+                                <textarea class="form-control" cols="40" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btnPage" type="submit">SEND</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="course__bg">
+            <img src="./image/accent_bottom_wave_01.png" alt="">
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <span class="card-title-lg">Contact us</span>
+                    <ul class="footer__content">
+                        <li>
+                            <span>
+                                <i class="fa fa-map-marker-alt"></i>
+                                Franklin St, Greenpoint Ave
+                            </span>
+                        </li>
+                        <li>
+                            <a href="tel:++2342 5446 67">
+                                <i class="fa fa-phone"></i>
+                                +2342 5446 67</a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fa fa-clock"></i>
+                                Monday - Friday: 8 AM - 5 PM
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <span class="card-title-lg">Quick Links</span>
+                    <ul class="footer__content footer__line">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#course">Courses</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <span class="card-title-lg">About</span>
+                    <ul class="footer__content footer__line">
+                        <li><a href=".#about">About Us</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Get Quote</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <span class="card-title-lg">Newsletter</span>
+                    <ul class="footer__content">
+                        <li><input class="footer__input" type="text" placeholder="Your Email"></li>
+                        <li><button class="btnPage">SUBSCRIBE</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
