@@ -4,12 +4,12 @@
 @import "./Helper/mixin.scss";
 
 //Base
-@import "./Base/customize.scss";
 @import "./Base/reset.scss";
+@import "./Base/customize.scss";
 
 //Component
-@import "./Components/button.scss";
 @import "./Components/background.scss";
+@import "./Components/button.scss";
 
 //Layouts
 @import "./Layouts/header.scss";

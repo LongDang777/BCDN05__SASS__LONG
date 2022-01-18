@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box; }
 
-html, body {
-  min-height: 100vh;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.8em; }
 
@@ -21,7 +21,9 @@ a {
   a:hover {
     text-decoration: none; }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -38,27 +40,15 @@ a {
 .col-md-6 {
   padding: 0; }
 
-.btnPage {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  box-shadow: 0 0 0 3em #b61984 inset;
-  color: #fff;
-  font-size: 13.5px;
-  font-weight: 500;
-  padding: 13px 16px;
-  border-radius: 50px;
-  border: solid 0.5px #b61984;
-  background-color: #fff;
-  transition: all 300ms ease; }
-
-.course__right .btnPage {
-  margin: 40px 0 20px 0;
-  width: 40%; }
-
-html .btnPage:hover {
-  text-decoration: none;
-  color: #b61984;
-  box-shadow: #b61984 0 0 1px inset; }
-
+@media screen and (min-width: 0) {
+  .container {
+    padding: 0 30px; } }
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 1200px; } }
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0; } }
 .bg__img-yellow {
   position: absolute;
   top: 0;
@@ -112,6 +102,27 @@ html .btnPage:hover {
   user-select: none;
   z-index: -8; }
 
+.btnPage {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 13px 16px;
+  border-radius: 50px;
+  border: solid 0.5px #b61984;
+  background-color: #fff;
+  transition: all 300ms ease; }
+
+.course__right .btnPage {
+  margin: 40px 0 20px 0;
+  width: 40%; }
+
+html .btnPage:hover {
+  text-decoration: none;
+  color: #b61984;
+  box-shadow: #b61984 0 0 1px inset; }
+
 .navbar,
 .navbar-brand {
   padding: 0; }
@@ -126,44 +137,16 @@ html .btnPage:hover {
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #181818;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   position: relative;
   transition: all 300ms ease; }
 
-/**
-.nav-link::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 5;
-    background-color: $color-pink-1;
-    height: 0.5rem;
-    width: 0.5rem;
-    left: 50%;
-    border-radius: 50%;
-    bottom: -4px;
-    pointer-events: none;
-    transform: scale(0);
-    transition: $ts;
-}
-.active .nav-link::after {
-    transform: scale(1);
-}
-.nav-item:hover {
-    .nav-link::after {
-        transform: scale(1.5);
-    }
-    .nav-link {
-        color: $color-pink-1 !important;
-    }
-}
-*/
 .fa-twitter,
 .fa-facebook-f,
 .fa-instagram,
 .fa-youtube {
   padding: 13px 0 13px 8px;
-  font-size: 13.225px;
+  font-size: 14.225px;
   color: #181818;
   transition: all 300ms ease; }
   .fa-twitter:hover,
@@ -173,13 +156,9 @@ html .btnPage:hover {
     color: #b61984; }
 
 @media screen and (min-width: 0) {
-  .container {
-    padding: 0 30px; }
-
   #header {
     background-color: #fff;
-    margin: 0;
-    padding: 0 30px; }
+    margin: 0; }
 
   .navbar {
     flex-direction: row-reverse;
@@ -204,26 +183,70 @@ html .btnPage:hover {
   .header__social-icon {
     padding-top: 10px; }
 
-  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
     color: #b61984; } }
-@media screen and (min-width: 576px) {
-  .container {
-    padding: 0; } }
 @media screen and (min-width: 1024px) {
-  .navbar {
-    flex-direction: row;
-    margin: auto; }
-
-  .navbar-brand img {
-    height: 80px; }
-
   #header {
-    padding: 0;
     margin: auto;
     background-color: transparent; }
 
   .header__contact {
     display: flex; } }
+@media screen and (min-width: 1200px) {
+  .navbar {
+    flex-direction: row; }
+
+  .navbar-brand img {
+    height: 80px; }
+
+  .navbar-expand-xl .navbar-nav .nav-link {
+    color: #181818;
+    text-align: center; }
+
+  .nav-item {
+    width: 95px; }
+
+  .nav-link {
+    font-weight: 600;
+    position: relative; }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    background-color: #b61984;
+    height: 0.5rem;
+    width: 0.5rem;
+    left: 50%;
+    border-radius: 50%;
+    bottom: -4px;
+    pointer-events: none;
+    transform: scale(0);
+    transition: all 300ms ease; }
+
+  .active .nav-link::after {
+    transform: scale(1); }
+
+  .nav-item:hover .nav-link::after {
+    transform: scale(1.5); }
+  .nav-item:hover .nav-link {
+    color: #b61984 !important; }
+
+  .header__contact {
+    padding-top: 0;
+    padding-left: 30px; }
+
+  .header__social-icon {
+    padding-top: 0; }
+
+  .header__contact-cell {
+    display: flex;
+    align-items: center; }
+
+  .header__phone {
+    padding-right: 10px; } }
 #about .row {
   margin: 0; }
 
@@ -248,7 +271,7 @@ html .btnPage:hover {
 
 @media screen and (min-width: 0px) {
   #about h5 {
-    font-size: 0.95rem; }
+    font-size: 13.3px; }
 
   #about span {
     font-size: 2.5rem;
@@ -283,7 +306,7 @@ html .btnPage:hover {
   color: #b61984; }
 
 .card-body p {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin-top: 15px; }
 
@@ -327,7 +350,7 @@ html .btnPage:hover {
     font: inherit;
     border-radius: 50px;
     color: #181818;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: none;
     line-height: 12px;
     padding: 12px 12px 12px 42px;
@@ -380,7 +403,7 @@ html .btnPage:hover {
 
 #footer i, #footer a {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: none;
   line-height: 14.85px; }
 
@@ -393,7 +416,7 @@ html .btnPage:hover {
 
 .footer__input {
   outline: none;
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 500;
   padding: 13px 44px;
   border-radius: 50px;
