@@ -1,43 +1,104 @@
-#blog{
+#blog {
     background-color: $color-violet;
     position: relative;
     z-index: 1;
 }
-.card{
-   border: none;
+.card {
+    border: none;
     border-radius: 10px;
     overflow: hidden;
     transition: $ts;
-    &:hover{
-        box-shadow: 0 30px 30px -10px rgba($color: #000000, $alpha: .25);
+    &:hover {
+        box-shadow: 0 30px 30px -10px rgba($color: #000000, $alpha: 0.25);
     }
 }
-.blog__img{
+.blog__img {
     overflow: hidden;
 }
-.card-img-top{
-    transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
-    &:hover{
-        transform: scale3d(1.05,1.05,1.05)
+.card-img-top {
+    transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+    &:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
     }
 }
-.card-body{
+.card-body {
     padding: 30px;
 }
-.card-body h5{
+.card-body h5 {
     font-size: 0.75rem;
     font-weight: $fw-6;
     color: $color-pink-1;
 }
+.card-title-lg {
+    @include styleText($color-dark-2, $fs-2, $fw-7, $lh-1);
+}
 .card-body p {
-    font-size: $fs-2;
+    font-size: $fs-1;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin-top: 15px;
+    line-height: $lh-2;
 }
-#blog .col-3{
-    padding:  0 18px 0 18px;
-}
-.blog__space{
+// #blog .col-3 {
+//     padding: 0 18px 0 18px;
+// }
+.blog__space {
     height: 40px;
     width: 100%;
+}
+// Reponsive
+
+@media screen and(min-width:0px) {
+    .card-title {
+        margin-bottom: 0.5rem;
+    }
+    .card-body h5 {
+        font-size: 0.7rem;
+    }
+    .card-body p {
+        font-size: 13px;
+    }
+}
+@media screen and(min-width:360px) {
+    .card-body p {
+        font-size: 14px;
+    }
+}
+@media screen and(min-width: 481px) {
+    #blog .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    #blog .container {
+        padding: 0 25px;
+    }
+    #blog{
+        .col-sm-6,
+        .col-lg-3,
+        .col-12 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+@media screen and(min-width: 992px){
+    #blog .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+@media screen and(min-width:1200px) {
+    #blog .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0;
+    }
+    .card-body p {
+        font-size: 15px;
+    }
+
+}
+@media screen and(min-width:1920px) {
+    #blog .container {
+        padding: 0;
+    }
 }

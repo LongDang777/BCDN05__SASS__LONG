@@ -3,39 +3,33 @@
     position: relative;
     z-index: 1;
 }
-#course .container {
-    width: 1040px;
-}
 #course .row {
     padding: 2em 0 2em 0;
 }
-.course__left img {
-    max-width: 527px;
-}
-
 .course__right form {
     box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
     padding: 40px 30px;
     border-radius: $brd-1;
     background: $color-white-1;
     legend {
-        @include styleText($color-dark-2, $fs-4 + 0.5, $fw-7, $lh-4);
-        text-align: center;
-        margin-bottom: 30px;
+        font-size: 2.35rem;
+        font-weight: $fw-7;
     }
     .form-row {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
     }
     .custom-select,
     .form-control {
+        outline: none;
+        border: 1px solid rgba(0,0,0,.1);
         font: inherit;
         border-radius: $brd-3;
-        @include styleText($color-dark-1, $fs-1 - 1, none, $lh-1);
-        padding: 12px 12px 12px 42px;
+        @include styleText($color-dark-1, $fs-0, none, $lh-1);
+        width: 100%;
+        padding-left: 45px;
         height: 3.7em;
         transition: $ts-2;
-        outline: none;
-        height: 4em;
+        height: 3em;
         &:focus {
             box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
@@ -50,9 +44,49 @@
         position: relative;
         i {
             position: absolute;
-            top: 15px;
+            top: 10px;
             left: 20px;
             color: $color-pink-1;
         }
+    }.btnPage:hover{
+        @include styleHoverBTN($color-pink-1,$color-pink-1 0 0 1px inset);      
+
+    }
+}
+.course__right .btnPage{
+    margin: 40px 0 20px 0;
+    width: 100%;
+}
+// reponsive
+@media screen and (min-width:0px){
+    #course .row {
+        padding: 0;
+    }
+    .course__left{
+        padding: 0 35px;
+    }
+    .course__right{
+        padding-top: 2em;
+        form{
+            padding: 40px 25px;
+        }
+    }
+    .course__right{
+        form legend{
+            font-size: 1.9rem;
+            text-align: left;
+            padding-bottom: 3rem;
+        }
+    } 
+        
+}
+@media screen and (min-width:780px){
+    .course__right .btnPage{
+        width: 24%;
+    }
+}
+@media screen and (min-width:992px){
+    .course__right .btnPage{
+        width: 35%;
     }
 }

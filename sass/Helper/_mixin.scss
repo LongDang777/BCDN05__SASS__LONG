@@ -1,6 +1,19 @@
-@mixin styleText($color,$fs,$fw,$lh) {
+@mixin styleText($color, $fs, $fw, $lh) {
     color: $color;
     font-size: $fs;
     font-weight: $fw;
     line-height: $lh;
 }
+
+@mixin styleButton($bg, $boxsh, $pd-y, $pd-x) {
+    background-color: $bg;
+    box-shadow: $boxsh;
+    padding: $pd-y $pd-x;
+}
+
+@mixin  styleHoverBTN ($color,$boxSh){
+    color: $color;
+    box-shadow: $boxSh;
+}
+
+

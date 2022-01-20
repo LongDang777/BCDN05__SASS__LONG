@@ -1,19 +1,38 @@
+#header{
+    position: fixed;
+    background-color: $color-white-1;
+    box-shadow: 0 0 10px 0 rgba(204,204,204,.5);
+    width: -webkit-fill-available;
+    z-index: 10;
+}
 .navbar,
 .navbar-brand {
     padding: 0;
 }
+.nav-link {
+    font-size: $fs-0;
+}
+.navbar-toggler {
+    padding: 0 0.75rem 0 0;
+}
+.header__toggler{
+    font-size: 25px;
+    &:hover{
+        color: $color-pink-1;
+        .fa-bars{
+            transition: $ts;
+            transform: scaleY(1.2);
+        }
+    }
+}
 .navbar-expand-lg .navbar-nav .nav-item {
-    padding-left: $pd-1;
-    padding-right: $pd-4 - 3;
     transition: $ts;
     &:hover::after {
         transform: scale(1.1);
     }
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: $color-dark-1;
     font-weight: $fw-6;
-    font-size: $fs-1;
     position: relative;
     transition: $ts;
 }
@@ -21,42 +40,40 @@
 .fa-facebook-f,
 .fa-instagram,
 .fa-youtube {
-    padding: 13px 0 13px 8px;
-    font-size: $fs-1 + 0.225;
+    padding: $pd-1 $pd-1*0.3;
+    font-size: $fs-0 + 0.0625rem;
     color: $color-dark-1;
     transition: $ts;
     &:hover {
         color: $color-pink-1;
     }
 }
+.header__phone .btnPage:hover{
+    @include styleHoverBTN($color-pink-1,$color-pink-1 0 0 1px inset);      
+}
 //Reponsive
 @media screen and(min-width:0) {
-    #header {
-        background-color: $color-white-1;
-        margin: 0;
-    }
     .navbar {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    .navbar-light .navbar-toggler {
+    .navbar-toggler {
         border: none;
     }
-    .navbar-light .navbar-toggler-icon {
-        height: 48px;
-        width: 35px;
-    }
-    .navbar-toggler {
-        padding: 0 0.5em 0 0;
-    }
     .navbar-brand img {
-        height: 48px;
+        height: 3rem;
+    }
+    .nav-item a{
+        color: $color-dark-1;
+        &:hover{
+           color: $color-pink-1;
+        }
     }
     .header__contact {
-        padding-top: 15px;
+        padding-top: $pd-2;
     }
     .header__social-icon {
-        padding-top: 10px;
+        padding-top: $pd-1;
     }
     .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
@@ -65,8 +82,7 @@
 }
 @media screen and(min-width:1024px) {
     #header {
-        margin: auto;
-        background-color: transparent;
+        margin: auto;  
     }
     .header__contact {
         display: flex;
@@ -75,6 +91,9 @@
 @media screen and(min-width:1200px) {
     .navbar {
         flex-direction: row;
+    }
+    .navbar-nav{
+        align-items: center;
     }
     .navbar-brand img {
         height: 80px;
@@ -90,7 +109,6 @@
         font-weight: $fw-6;
         position: relative;
     }
-
     .nav-link::after {
         content: "";
         display: block;
@@ -117,7 +135,6 @@
             color: $color-pink-1 !important;
         }
     }
-
     .header__contact {
         padding-top: 0;
         padding-left: 30px;

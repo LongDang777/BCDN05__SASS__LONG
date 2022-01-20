@@ -27,69 +27,73 @@
 
 <body>
     <div class="wrapContent">
-        <header id="header" class="container">
-            <nav class="navbar navbar-expand-xl navbar-light">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./image/crest.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class=" nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#course">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Elements</a>
-                        </li>
-                        <div class="header__contact">
-                            <div class="header__contact-cell">
-                                <div class="header__phone">
-                                    <a class="btnPage" href="tel:(+1)555 234-8765">
-                                        <i class="fa fa-phone"></i>
-                                        &nbsp (+1) 555 234-8765
-                                    </a>
-                                </div>
-                                <div class="header__social-icon">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+        <header id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./image/crest.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="header__toggler">
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#course">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Elements</a>
+                            </li>
+                            <div class="header__contact">
+                                <div class="header__contact-cell">
+                                    <div class="header__phone">
+                                        <a class="btnPage" href="tel:(+1)555 234-8765">
+                                            <i class="fa fa-phone"></i>
+                                            &nbsp (+1) 555 234-8765
+                                        </a>
+                                    </div>
+                                    <div class="header__social-icon">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                </div>
-            </nav>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!-- ABOUT -->
         <section id="about" class="about">
             <div class="container">
                 <div class="about__content">
                     <div class="row  modal-dialog-centered">
-                        <div class="col-md-6">
-                            <div class="about__title">
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="about__title">                               
                                 <h5>ABOUT US</h5>
                                 <span>The language teaching experts</span>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./image/hero_team.png">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="./image/hero_team.png">
                         </div>
                     </div>
                 </div>
@@ -113,7 +117,7 @@
                             <img class="card-img-top" src="./image/teacher_1.jpg">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">ITALIA</h5>
+                            <h5 class="card-title">ITALIAN</h5>
                             <span class="card-title-lg">July Roberts</span>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         </div>
@@ -213,11 +217,11 @@
     </section>
     <section id="course">
         <div class="container">
-            <div class="row ">
-                <div class="course__left col-xl-7">
-                    <img src="./image/conatct_inner.png" alt="">
+            <div class="row">
+                <div class="course__left col-12 col-lg-7">
+                    <img class="img-fluid" src="./image/conatct_inner.png" alt="">
                 </div>
-                <div class="course__right col-xl-5">
+                <div class="course__right col-12 col-lg-5">
                     <form action="">
                         <form>
                             <legend>Find Your Course</legend>
@@ -259,7 +263,7 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <span class="card-title-lg">Contact us</span>
                     <ul class="footer__content">
                         <li>
@@ -289,7 +293,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <span class="card-title-lg">Quick Links</span>
                     <ul class="footer__content footer__line">
                         <li><a href="./index.html">Home</a></li>
@@ -298,7 +302,7 @@
                         <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <span class="card-title-lg">About</span>
                     <ul class="footer__content footer__line">
                         <li><a href=".#about">About Us</a></li>
@@ -307,7 +311,7 @@
                         <li><a href="#footer">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <span class="card-title-lg">Newsletter</span>
                     <ul class="footer__content">
                         <li><input class="footer__input" type="text" placeholder="Your Email"></li>
