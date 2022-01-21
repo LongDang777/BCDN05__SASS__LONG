@@ -4,11 +4,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // background-attachment: scroll;
     color: $color-white-1;
     padding: 149px 0;
     .card-title-lg {
         color: $color-white-1;
+        font-family: "Montserrat", sans-serif;
     }
     .row {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -25,15 +25,16 @@
         box-shadow: 0 0 0 3em #fff inset;
         width: 100%;
         color: $color-pink-1;
+        padding: 14px 0;
         &:hover {
             @include styleHoverBTN($color-white-1, $color-white-1 0 0 1px inset);
             background-color: $color-pink-1;
         }
     }
 }
-#footer i,
+#footer li span,
 #footer a {
-    @include styleText($color-white-1, $fs-1, none, $lh-2);
+    @include styleText($color-white-1, $fs-0, none, $lh-2 + 0.2);
 }
 
 .footer__line li {
@@ -59,4 +60,20 @@
 }
 .footer__content .btnPage{
     margin-top: 1rem;
+}
+
+// reponsive
+@media (min-width: 0px){
+    #footer li span{
+        font-size: 0.75rem;
+        line-height: 2.5;
+    }
+}
+
+@media (min-width: 480px){
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }

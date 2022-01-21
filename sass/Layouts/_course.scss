@@ -1,5 +1,6 @@
 #course {
-    padding-top: 8em;
+    // background-color: #ddbfbf;
+    padding-top: 6.8em;
     position: relative;
     z-index: 1;
 }
@@ -26,10 +27,7 @@
         border-radius: $brd-3;
         @include styleText($color-dark-1, $fs-0, none, $lh-1);
         width: 100%;
-        padding-left: 45px;
-        height: 3.7em;
         transition: $ts-2;
-        height: 3em;
         &:focus {
             box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
@@ -42,9 +40,10 @@
     }
     .course__icon {
         position: relative;
-        i {
+        .fa {
             position: absolute;
-            top: 10px;
+            font-size: 13px;
+            top: 12px;
             left: 20px;
             color: $color-pink-1;
         }
@@ -59,34 +58,78 @@
 }
 // reponsive
 @media screen and (min-width:0px){
+    #course {
+        padding-top: 4rem;
+    }
     #course .row {
         padding: 0;
     }
     .course__left{
-        padding: 0 35px;
+        padding: 3rem 2.2rem;
+        padding-bottom: 1.8rem;
+        
     }
     .course__right{
-        padding-top: 2em;
         form{
             padding: 40px 25px;
         }
     }
     .course__right{
         form legend{
-            font-size: 1.9rem;
+            font-size: 1.87rem;
             text-align: left;
-            padding-bottom: 3rem;
+            padding-bottom: 3.15rem;
+            margin: 0;
         }
-    } 
-        
+    }
+    .course__right form .form-control {
+        font-size: 0.7rem;
+        padding-left: 2.5rem;
+        height: 2.5rem;
+    }
+    .course__right form .custom-select{
+        padding-left: 2.5rem;
+        height: 2.4rem;
+        color: #6f7880;
+        font-size: 0.7rem;
+    }
+    .course__right .btnPage {
+        margin: 24px 0 30px 0;
+    }   
 }
 @media screen and (min-width:780px){
     .course__right .btnPage{
         width: 24%;
-    }
+    }   
 }
 @media screen and (min-width:992px){
+    #course .container{
+        max-width: 1040px;
+    }
+    .course__right{
+        margin-top: 3rem;
+        padding: 0 20px;
+    }
     .course__right .btnPage{
-        width: 35%;
+        width: 50%;
+    }
+    .course__right form{
+        max-width: 394px;
+        padding: 30px 25px;
+        padding-bottom: 35px;
+    }
+}
+@media screen and (min-width:1200px){
+    .course__left{
+        text-align: center;
+    }
+    .img-fluid{
+        max-width: 527px;
+    }
+    .course__right form legend {
+        font-size: 2.35rem;
+    }
+    .course__right .btnPage{
+        width: 45%;
     }
 }

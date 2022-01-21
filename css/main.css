@@ -405,7 +405,7 @@ a {
   #blog .container {
     padding: 0; } }
 #course {
-  padding-top: 8em;
+  padding-top: 6.8em;
   position: relative;
   z-index: 1; }
 
@@ -433,10 +433,7 @@ a {
     font-weight: none;
     line-height: 1.2;
     width: 100%;
-    padding-left: 45px;
-    height: 3.7em;
-    transition: all 500ms ease;
-    height: 3em; }
+    transition: all 500ms ease; }
     .course__right form .custom-select:focus,
     .course__right form .form-control:focus {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
@@ -447,9 +444,10 @@ a {
     font-family: "Roboto", Arial, Helvetica, sans-serif; }
   .course__right form .course__icon {
     position: relative; }
-    .course__right form .course__icon i {
+    .course__right form .course__icon .fa {
       position: absolute;
-      top: 10px;
+      font-size: 13px;
+      top: 12px;
       left: 20px;
       color: #b61984; }
   .course__right form .btnPage:hover {
@@ -461,27 +459,68 @@ a {
   width: 100%; }
 
 @media screen and (min-width: 0px) {
+  #course {
+    padding-top: 4rem; }
+
   #course .row {
     padding: 0; }
 
   .course__left {
-    padding: 0 35px; }
+    padding: 3rem 2.2rem;
+    padding-bottom: 1.8rem; }
 
-  .course__right {
-    padding-top: 2em; }
-    .course__right form {
-      padding: 40px 25px; }
+  .course__right form {
+    padding: 40px 25px; }
 
   .course__right form legend {
-    font-size: 1.9rem;
+    font-size: 1.87rem;
     text-align: left;
-    padding-bottom: 3rem; } }
+    padding-bottom: 3.15rem;
+    margin: 0; }
+
+  .course__right form .form-control {
+    font-size: 0.7rem;
+    padding-left: 2.5rem;
+    height: 2.5rem; }
+
+  .course__right form .custom-select {
+    padding-left: 2.5rem;
+    height: 2.4rem;
+    color: #6f7880;
+    font-size: 0.7rem; }
+
+  .course__right .btnPage {
+    margin: 24px 0 30px 0; } }
 @media screen and (min-width: 780px) {
   .course__right .btnPage {
     width: 24%; } }
 @media screen and (min-width: 992px) {
+  #course .container {
+    max-width: 1040px; }
+
+  .course__right {
+    margin-top: 3rem;
+    padding: 0 20px; }
+
   .course__right .btnPage {
-    width: 35%; } }
+    width: 50%; }
+
+  .course__right form {
+    max-width: 394px;
+    padding: 30px 25px;
+    padding-bottom: 35px; } }
+@media screen and (min-width: 1200px) {
+  .course__left {
+    text-align: center; }
+
+  .img-fluid {
+    max-width: 527px; }
+
+  .course__right form legend {
+    font-size: 2.35rem; }
+
+  .course__right .btnPage {
+    width: 45%; } }
 #footer {
   width: 100%;
   background-image: url(../../image/footer_background.jpg);
@@ -491,7 +530,8 @@ a {
   color: #fff;
   padding: 149px 0; }
   #footer .card-title-lg {
-    color: #fff; }
+    color: #fff;
+    font-family: "Montserrat", sans-serif; }
   #footer .row {
     font-family: "Roboto", Arial, Helvetica, sans-serif; }
   #footer .footer__content {
@@ -503,18 +543,19 @@ a {
     border: solid 1px #fff;
     box-shadow: 0 0 0 3em #fff inset;
     width: 100%;
-    color: #b61984; }
+    color: #b61984;
+    padding: 14px 0; }
     #footer .btnPage:hover {
       color: #fff;
       box-shadow: #fff 0 0 1px inset;
       background-color: #b61984; }
 
-#footer i,
+#footer li span,
 #footer a {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: none;
-  line-height: 1.8; }
+  line-height: 2; }
 
 .footer__line li {
   padding-bottom: 10px;
@@ -539,5 +580,15 @@ a {
 
 .footer__content .btnPage {
   margin-top: 1rem; }
+
+@media (min-width: 0px) {
+  #footer li span {
+    font-size: 0.75rem;
+    line-height: 2.5; } }
+@media (min-width: 480px) {
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
