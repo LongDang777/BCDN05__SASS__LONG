@@ -523,7 +523,7 @@ a {
     width: 45%; } }
 #footer {
   width: 100%;
-  background-image: url(../../image/footer_background.jpg);
+  background-image: url(../image/footer_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
